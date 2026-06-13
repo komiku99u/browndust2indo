@@ -209,13 +209,20 @@ body{
    FOOTER
 ========================= */
 
-.footer{
-  text-align:center;
-  padding:20px;
-  font-size:13px;
-  color:#8d96a5;
-  border-top:1px solid rgba(255,255,255,0.05);
-  background:#181c25;
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #8d96a5;
+  background: #181c25;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer img {
+  display: block;
+  margin: 8px auto 0;
+  max-width: 100%;
 }
 
 /* =========================
