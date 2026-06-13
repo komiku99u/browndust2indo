@@ -1,0 +1,261 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+  font-family: "Segoe UI", sans-serif;
+  background:#0f1115;
+  color:#fff;
+}
+
+/* =========================
+   APP CONTAINER
+========================= */
+
+.app{
+  width:100%;
+  max-width:900px;
+  margin:auto;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:#151821;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  padding:22px 20px;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  background:#181c25;
+  position:sticky;
+  top:0;
+  z-index:100;
+}
+
+.back-btn{
+  width:48px;
+  height:48px;
+  border-radius:14px;
+  background:#242937;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:#fff;
+  transition:0.2s;
+  flex-shrink:0;
+}
+
+.back-btn:hover{
+  background:#2f3647;
+  transform:translateY(-1px);
+}
+
+.back-btn .material-icons{
+  font-size:24px;
+}
+
+.header-text h2{
+  font-size:20px;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.header-text p{
+  font-size:13px;
+  color:#9aa4b2;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content{
+  flex:1;
+  padding:10px;
+}
+
+/* =========================
+   ITEM
+========================= */
+
+.item{
+  width:100%;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:16px;
+  margin-bottom:10px;
+  border-radius:18px;
+  text-decoration:none;
+  color:#fff;
+  background:#1b2030;
+  transition:0.2s;
+  border:1px solid transparent;
+}
+
+.item:hover{
+  background:#23293a;
+  border-color:rgba(255,255,255,0.06);
+  transform:translateY(-1px);
+}
+
+/* =========================
+   ICON
+========================= */
+
+.item .material-icons{
+  width:52px;
+  height:52px;
+  border-radius:14px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  flex-shrink:0;
+}
+
+.folder{
+  background:#2d3f69;
+  color:#7fb2ff;
+}
+
+/* ITEM FILE */
+.file {
+  text-align: center;
+  text-decoration: none;
+  color: #eaeaea;
+  text-align: center;
+}
+
+.file img {
+  width: 160px;
+  height: 220px;
+  margin-bottom: 0px;
+  object-fit: contain;   /* ini kunci */
+  border-radius: 0px;
+  transition: 0.2s;
+}
+
+.file:hover img {
+  transform: scale(1.05);
+}
+
+.file-name {
+  font-size: 14px;
+  margin-top: 0px;
+  color: #fff;
+  word-break: break-word;
+  text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: #fff;
+}
+.file-name2 {
+  font-size: 10px;
+  margin-top: 6px;
+  color: #ccc;
+  word-break: break-word;
+}
+
+/* =========================
+   INFO
+========================= */
+
+.info{
+  flex:1;
+  min-width:0;
+}
+
+.name{
+  font-size:16px;
+  font-weight:600;
+  line-height:1.4;
+  margin-bottom:4px;
+  word-break:break-word;
+}
+
+.meta{
+  font-size:13px;
+  color:#97a1b0;
+}
+
+/* =========================
+   DATE
+========================= */
+
+.date{
+  font-size:13px;
+  color:#8d96a5;
+  white-space:nowrap;
+  margin-left:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  text-align:center;
+  padding:20px;
+  font-size:13px;
+  color:#8d96a5;
+  border-top:1px solid rgba(255,255,255,0.05);
+  background:#181c25;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:600px){
+
+  .header{
+    padding:18px 16px;
+  }
+
+  .header-text h2{
+    font-size:18px;
+  }
+
+  .item{
+    padding:14px;
+    gap:14px;
+  }
+
+  .item .material-icons{
+    width:46px;
+    height:46px;
+    font-size:24px;
+  }
+
+  .name{
+    font-size:15px;
+  }
+
+  .date{
+    font-size:12px;
+  }
+
+}
+/* GRID VIEW */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 0px;
+}
